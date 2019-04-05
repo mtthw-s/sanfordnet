@@ -1,4 +1,17 @@
 # Sanfordweb
+Small website development
+
+To run from cloud 9 using angular cli use: 
+`ng serve --open --host $IP --port $PORT --disable-host-check`
+
+
+### To fix angular IE integration
+Uncomment lines in pollyfill.ts and run the following commands
+```
+npm uninstall classlist.js --save
+npm cache verify
+npm install classlist.js --save-exact
+```
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.8.
 
