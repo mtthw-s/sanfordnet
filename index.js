@@ -12,13 +12,13 @@ const app = express();
 //parsers for post data
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
-
+console.log("app useing body parser");
 //point to static path to dist
 app.use(express.static(path.join(__dirname, 'dist/sanfordweb')));
-
+console.log("statics set");
 //set api routes
 app.use('/api', api);
-
+console.log("api set");
 //return root file for all other routes
 app.get('*', (req, res) =>{
     res.sendFile(path.join(__dirname, 'dist/sanfordweb/index.html'));
