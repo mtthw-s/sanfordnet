@@ -1,11 +1,16 @@
 # Sanfordweb
 Small website development
 
-To run from cloud 9 using angular cli use: 
+To run from cloud 9 (will only run frontend code) using angular cli use: 
 `ng serve --open --host $IP --port $PORT --disable-host-check`
 
+To run full application in the root of the project run:
+```
+ng build
+node index.js
+```
 
-### To fix angular IE integration
+### To fix angular IE integration (if not already done)
 Uncomment lines in pollyfill.ts and run the following commands
 ```
 npm uninstall classlist.js --save
